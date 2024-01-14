@@ -1,17 +1,18 @@
 import {Route,Routes} from 'react-router-dom';
+import Layout from "./pages/Layout";
+import LandingPage from "./pages/LandingPage";
 
-function App() {
+export default function App() {
   
 
   return (
     <>
       <Routes>
-        <Route>
-
-        </Route>
+      <Route index element={<LandingPage />} />
+      <Route path="/" element={<Layout />} />
       </Routes>
     </>
   )
 }
 
-export default App;
+
